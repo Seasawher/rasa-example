@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  rasa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    tty: true
+    stdin_open: true
+    command: "run"

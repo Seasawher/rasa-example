@@ -1,0 +1,24 @@
+// For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/docker-existing-docker-compose
+{
+    "name": "rasa-devcontainer",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "rasa",
+    "workspaceFolder": "/app",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.trimFinalNewlines": true,
+                "files.trimTrailingWhitespace": true,
+                "editor.formatOnSave": true,
+                "python.languageServer": "Pylance",
+                "python.formatting.provider": "none",
+                "[markdown]": {
+                    "files.trimTrailingWhitespace": false
+                }
+            }
+            // "extensions": [
+            // ]
+        }
+    }
+}
